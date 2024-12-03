@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karan's Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        /* Project Section */
+        section {
+            margin: 50px auto;
+            max-width: 800px;
+        }
+
+        .project {
+            background: #2e75b6;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            animation: slideUp 1s ease-in-out;
+        }
+
+        .project h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            margin: 0;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1e3c72;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Karan's Portfolio</h1>
+        <p>DevOps Enthusiast | Cloud Practitioner | Open Source Contributor</p>
+    </header>
+
+    <section>
+        <div class="project">
+            <h2>1. Jenkins CI/CD Pipeline for Microservices</h2>
+            <p>Automated the deployment of a sample voting app using Jenkins pipelines, Docker Compose, and Kubernetes. Each microservice is independently deployed and monitored.</p>
+        </div>
+        <div class="project">
+            <h2>2. Spring Boot Bank Application Deployment</h2>
+            <p>Deployed a Spring Boot-based banking app with MySQL using Jenkins. Configured pipelines to automate the build, test, and deployment processes using Docker.</p>
+        </div>
+        <div class="project">
+            <h2>3. Kubernetes Blog Hosting</h2>
+            <p>Set up a scalable Kubernetes cluster to host a blogging platform. Used Prometheus and Grafana for monitoring and alerts.</p>
+        </div>
+        <div class="project">
+            <h2>4. DevOps Toolchain Integration</h2>
+            <p>Integrated GitHub, Ansible, and Docker to create a seamless workflow for a Django project deployed on AWS EC2.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Karan's Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

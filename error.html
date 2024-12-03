@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oops! Page Not Found</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #2a2a72; /* Gradient background */
+            background: linear-gradient(45deg, #2a2a72, #009ffd);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        h1 {
+            font-size: 5rem;
+            margin: 0;
+            animation: bounceIn 1.5s ease-in-out;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin: 10px 0 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .animation {
+            font-size: 10rem;
+            margin: 20px 0;
+            animation: spin 5s linear infinite;
+        }
+
+        a {
+            font-size: 1.2rem;
+            color: #fff;
+            background: #ff4f5a;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        a:hover {
+            background: #ff6c73;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            60% {
+                transform: scale(1.1);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>404</h1>
+        <div class="animation">🚀</div>
+        <p>Oops! The page you are looking for does not exist.</p>
+        <a href="/">Take Me Home</a>
+    </div>
+</body>
+</html>
+
